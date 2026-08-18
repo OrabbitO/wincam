@@ -316,7 +316,7 @@ class CaptureNative
     internal static extern void StopCapture(uint handle);
 
     [DllImport("ScreenCapture.dll")]
-    internal static extern ulong ReadNextFrame(uint handle, byte[] buffer, uint size);
+    internal static extern double ReadNextFrame(uint handle, byte[] buffer, uint size);
 
     [DllImport("ScreenCapture.dll", CharSet = CharSet.Unicode)]
     internal static extern int EncodeVideo(uint captureHandle, string filename, ref VideoEncoderProperties properties);
