@@ -17,11 +17,7 @@
 	</Target>
 
 	<ItemGroup>
-		<PackageReference Include="ScreenRecorder.Net" Version="1.0.12" />
-	</ItemGroup>
-
-	<ItemGroup>
-
+	  <ProjectReference Include="..\ScreenRecorder.Net\ScreenRecorder.Net.csproj" />
 	</ItemGroup>
 
 </Project>

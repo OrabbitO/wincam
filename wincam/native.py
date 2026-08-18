@@ -72,6 +72,7 @@ class NativeScreenRecorder:
         self.lib.GetCaptureTimes.argtypes = [ct.c_uint32, ct.POINTER(ct.c_double), ct.c_int]
         self.lib.GetCaptureTimes.restype = ct.c_uint32
         self.lib.SleepMicroseconds.argtypes = [ct.c_uint64]
+        self.lib.ReadNextFrame.restype = ct.c_double
 
     def start_capture(self, left: int, top: int, width: int, height: int, capture_cursor: bool) -> int:
         return self.lib.StartCapture(left, top, width, height, capture_cursor)
